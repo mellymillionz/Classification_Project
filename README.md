@@ -6,72 +6,65 @@
 
 In this lesson, we'll review all the guidelines and specifications for the final project for Module 5.
 
+## Dataset
 
-## Objectives
+This project was an exploration of NYC’s Department of Buildings Permit Issuance Data collected from the NYC.gov API. using classification algorithms. The dataset contains all DOB permits issued in NYC from 2013-2019, with 3.6 million rows and 60 total features. Documentation exists on various DOB websites. The dataset contains primarily categorical features relating to types of permits, locations, and other  information about specific permits issued.
 
-* Understand all required aspects of the Final Project for Module 5
-* Understand all required deliverables
-* Understand what constitutes a successful project
+## Question
 
-## The Project
+* Predicting whether a property is Residential or Not Residential (Commercial) - binary classification.
 
-For this project, you're going to select a dataset of your choosing and create a classification model. You'll start by identifying a problem you can solve with classification, and then identify a dataset. You'll then use everything you've learned about Data Science and Machine Learning thus far to source a dataset, preprocess and explore it, and then build and interpret a classification model that answers your chosen question.
+## Feature Engineering
 
+- self certification (Y, N, NA)
+- borough
+- nonprofit (Y, N) 
+- work type (recoded) 
+- job type (recoded) - A2, A3, A1, NB, DM, SG
+- permit type (recoded) - EW, PL, EQ, AL, NB, FO, SG, DM
+- permittee license type (recoded) - GC, MP, FS, OB, SI, NW, OW, RA, PE
+- owner business type (recoded)
+- permit sequence 
+- council district (26)
 
-### Selecting a Data Set
+All categerical variables were One Hot Encoded prior to modeling.
 
-We encourage you to be very thoughtful when identifying your problem and selecting your data set--an overscoped project goal or a poor data set can quickly bring an otherwise promising project to a grinding halt.
+### Modeling
 
-To help you select an appropriate data set for this project, we've set some guidelines:
+	Accuracy	AUC		F1 Score	Recall	Precision
+**Decision Tree**	
+Accuracy: 0.68	
+AUC: 0.64	
+         N	0.57	0.45	
+			Y	0.74	0.88	
+**Random Forest**	
+Accuracy: 0.72	
+AUC: 0.77	
+         N	0.66	0.59	
+			Y	0.76	0.83	
+**AdaBoost**	
+Accuracy: 0.68	
+AUC: 0.70	
+         N	0.62	0.55	
+			Y	0.73	0.79	
+**Gradient Boosting**
+Accuracy: 0.70	
+AUC: 0.69	
+         N	0.62	0.54	
+			Y	0.75	0.84	0.84
+**Logistic Regression**	
+Accuracy: 0.69	
+AUC: 0.75	
+         N	0.64	0.60	0.60
+			Y	0.73	0.77	0.77
+SVM	
+Accuracy: 0.69
+AUC: 	Not Run	
+         N	0.64	0.59	0.59
+ 			Y	0.72	0.77	0.77
 
-1. Your dataset should work for classification. The classification task can be either binary or multiclass, as long as it's a classification model.   
+## Limitations
 
-2. Your dataset needs to be of sufficient complexity. Try to avoid picking an overly simple dataset. Try to avoid extremely small datasets, as well as the most common datasets like titanic, iris, MNIST, etc. We want to see all the steps of the Data Science Process in this project--it's okay if the dataset is mostly clean, but we expect to see some preprocessing and exploration. See the following section, **_Data Set Constraints_**, for more information on this.   
-
-3. On the other end of the spectrum, don't pick a problem that's too complex, either. Stick to problems that you have a clear idea of how you can use machine learning to solve it. For now, we recommend you stay away from overly complex problems in the domains of Natural Language Processing or Computer Vision--although those domains make use of Supervised Learning, they come with a lot of other special requirements and techniques that you don't know yet (but you'll learn soon!). If you're chosen problem feels like you've overscoped, then it probably is. If you aren't sure if your problem scope is appropriate, double check with your instructor!  
-
-4. **_Serious Bonus Points_** if some or all of the data is data you have to source yourself through web scraping or interacting with a 3rd party API! Having projects that show off your ability to source data effectively make you look that much more impressive when showing your work off to potential employers!
-
-### Data Set Constraints
-
-When selecting a data set, be sure to take into consideration the following constraints:
-
-1. Your data set can't be one we've already worked with in any labs.
-2. Your data set should contain a minimum of 1000 rows.    
-3. Your data set should contain a minimum of 10 predictor columns, before any one-hot encoding is performed.   
-4. Your instructor must provide final approval on your data set.
-
-### Problem First, or Data First?
-
-There are two ways that you can about getting started: **_Problem-First_** or **_Data-First_**.
-
-**_Problem-First_**: Start with a problem that you want to solve with classification, and then try to find the data you need to solve it.  If you can't find any data to solve your problem, then you should pick another problem.
-
-**_Data-First_**: Take a look at some of the most popular internet repositories of cool data sets we've listed below. If you find a data set that's particularly interesting for you, then it's totally okay to build your problem around that data set.
-
-## The Deliverables
-
-Your completed should contain the following deliverables:
-
-1. A **_Jupyter Notebook_** containing any code you've written for this project.  
-
-2. An **_"Executive Summary" PowerPoint Presentation_** that gives a brief overview of your problem, dataset, process for answering your questions and your results. 
-
-
-
-### Jupyter Notebook Must-Haves
-
-For this project, your jupyter notebook should meet the following specifications:
-
-**_Organization/Code Cleanliness_**
-
-* The notebook should be well organized, easy to follow, and code is commented where appropriate.  
-    * Level Up: The notebook contains well-formatted, professional looking markdown cells explaining any substantial code. All functions have docstrings that act as professional-quality documentation.  
-* The notebook is written to technical audiences with a way to both understand your approach and reproduce your results. The target audience for this deliverable is other data scientists looking to validate your findings.  
-
-**_Process, Methodology, and Findings_**
-
-* Your notebook should contain a clear record of your process and methodology for exploring and preprocessing your data, building and tuning a model, and interpreting your results.
 
 
 

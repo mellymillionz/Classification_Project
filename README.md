@@ -9,7 +9,7 @@ This project was an exploration of NYC’s Department of Buildings Permit Issuan
 
 Predicting whether a property is **Residential** or **Not Residential (Commercial)** - binary classification.
 
-![Image description](link-to-image)
+
 
 
 ## Feature Engineering
@@ -85,10 +85,10 @@ Random Forest was selected as the final model because of it's combination of hig
 
 The following details the top important features identified in the Random Forest model:
 
-- City Council District 4
-- Mechanical and Other work permit types
+- City Council District 4 (Midtown East and UES)
+- Mechanical and 'Other' work permit types
 - New Buildings and Demolitions
-- Manhattan 
+- Borough of Manhattan 
 - Self certification
 - Nonprofit (NYCHA)
 

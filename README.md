@@ -36,34 +36,61 @@ All categerical variables were One Hot Encoded prior to modeling.
 - AUC: 0.64	
 - N	0.57	0.45	
 - Y	0.74	0.88	
+
 **Random Forest**	
 - Accuracy: 0.72	
 - AUC: 0.77	
 - N	0.66	0.59	
 - Y	0.76	0.83	
+
 **AdaBoost**	
 - Accuracy: 0.68	
 - AUC: 0.70	
 - N	0.62	0.55	
 - Y	0.73	0.79	
+
 **Gradient Boosting**
 - Accuracy: 0.70	
 - AUC: 0.69	
 - N	0 .62	0.54	
-- Y	0.75	0.84	0.84
+- Y	0.75	0.84	
+
 **Logistic Regression**	
 - Accuracy: 0.69	
 - AUC: 0.75	
-- N	0.64	0.60	0.60
-- Y	0.73	0.77	0.77
+- N	0.64	0.60	
+- Y	0.73	0.77	
 
 **SVM**
 - Accuracy: 0.69
 - AUC: 	Not Run	
-- N 0.64	0.59	0.59
-- Y	0.72	0.77	0.77
+- N 0.64	0.59	
+- Y	0.72	0.77	
+
+## Final Model
+
+Selected Random Forest as the final model.
+Parameters: 
+
+## Feature importances:
+- City Council District 4
+- Mechanical and Other work permit types
+- New Buildings and Demolitions
+- Manhattan 
+- Self certification
+- Nonprofit (NYCHA)
 
 ## Limitations
+
+- Data leakage
+- API slow
+- Processing speed low with so much data
+- Could not use GridSearch or run most models on full dataset
+- Disproportionate data 
+- Too many related categorical variables (dropped)
+- Messy government dataset 
+- Make sure to update your Sklearn
+
 
 
 

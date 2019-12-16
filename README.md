@@ -31,37 +31,37 @@ All categerical variables were One Hot Encoded prior to modeling.
 
 ### Modeling
 
-	Accuracy	AUC		F1 Score	Recall	Precision
 **Decision Tree**	
-Accuracy: 0.68	
-AUC: 0.64	
-         N	0.57	0.45	
-			Y	0.74	0.88	
+- Accuracy: 0.68	
+- AUC: 0.64	
+- N	0.57	0.45	
+- Y	0.74	0.88	
 **Random Forest**	
-Accuracy: 0.72	
-AUC: 0.77	
-         N	0.66	0.59	
-			Y	0.76	0.83	
+- Accuracy: 0.72	
+- AUC: 0.77	
+- N	0.66	0.59	
+- Y	0.76	0.83	
 **AdaBoost**	
-Accuracy: 0.68	
-AUC: 0.70	
-         N	0.62	0.55	
-			Y	0.73	0.79	
+- Accuracy: 0.68	
+- AUC: 0.70	
+- N	0.62	0.55	
+- Y	0.73	0.79	
 **Gradient Boosting**
-Accuracy: 0.70	
-AUC: 0.69	
-         N	0.62	0.54	
-			Y	0.75	0.84	0.84
+- Accuracy: 0.70	
+- AUC: 0.69	
+- N	0 .62	0.54	
+- Y	0.75	0.84	0.84
 **Logistic Regression**	
-Accuracy: 0.69	
-AUC: 0.75	
-         N	0.64	0.60	0.60
-			Y	0.73	0.77	0.77
-SVM	
-Accuracy: 0.69
-AUC: 	Not Run	
-         N	0.64	0.59	0.59
- 			Y	0.72	0.77	0.77
+- Accuracy: 0.69	
+- AUC: 0.75	
+- N	0.64	0.60	0.60
+- Y	0.73	0.77	0.77
+
+**SVM**
+- Accuracy: 0.69
+- AUC: 	Not Run	
+- N 0.64	0.59	0.59
+- Y	0.72	0.77	0.77
 
 ## Limitations
 

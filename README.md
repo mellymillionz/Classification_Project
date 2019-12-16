@@ -9,6 +9,9 @@ This project was an exploration of NYC’s Department of Buildings Permit Issuan
 
 Predicting whether a property is **Residential** or **Not Residential (Commercial)** - binary classification.
 
+![dependent_var.png]
+
+
 ## Feature Engineering
 
 - self certification 

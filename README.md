@@ -5,6 +5,8 @@
 
 This project was an exploration of NYC’s Department of Buildings Permit Issuance Data collected from the NYC.gov API. using classification algorithms. The dataset contains all DOB permits issued in NYC from 2013-2019, with 3.6 million rows and 60 total features. Documentation exists on various DOB websites. The dataset contains primarily categorical features relating to types of permits, locations, and other  information about specific permits issued.
 
+Dataset link = https://data.cityofnewyork.us/Housing-Development/DOB-Permit-Issuance/ipu4-2q9a
+
 ## Question
 
 Predicting whether a property is **Residential** or **Not Residential (Commercial)** - binary classification.

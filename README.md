@@ -9,7 +9,7 @@ This project was an exploration of NYC’s Department of Buildings Permit Issuan
 
 Predicting whether a property is **Residential** or **Not Residential (Commercial)** - binary classification.
 
-
+![Image description](https://github.com/mellymillionz/Classification_Project/blob/master/Outcomes.png)
 
 
 ## Feature Engineering

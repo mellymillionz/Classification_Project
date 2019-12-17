@@ -9,7 +9,8 @@ This project was an exploration of NYC’s Department of Buildings Permit Issuan
 
 Predicting whether a property is **Residential** or **Not Residential (Commercial)** - binary classification.
 
-![Image description](https://github.com/mellymillionz/Classification_Project/blob/master/Outcomes.png)
+
+![Image description](https://github.com/mellymillionz/Classification_Project/blob/master/total_counts.png)
 
 
 ## Feature Engineering
@@ -29,57 +30,15 @@ All categerical variables were **One-Hot-Encoded** prior to modeling to convert 
 
 ### Modeling
 
-**Decision Tree**	
-- Accuracy: 0.68	
-- AUC: 0.64	
 
-F1 and Recall:
-- N	0.57	0.45	
-- Y	0.74	0.88	
-
-**Random Forest**	
-- Accuracy: 0.72	
-- AUC: 0.77	
-
-F1 and Recall:
-- N	0.66	0.59	
-- Y	0.76	0.83	
-
-**AdaBoost**	
-- Accuracy: 0.68	
-- AUC: 0.70	
-
-F1 and Recall:
-- N	0.62	0.55	
-- Y	0.73	0.79	
-
-**Gradient Boosting**
-- Accuracy: 0.70	
-- AUC: 0.69	
-
-F1 and Recall:
-- N	0 .62	0.54	
-- Y	0.75	0.84	
-
-**Logistic Regression**	
-- Accuracy: 0.69	
-- AUC: 0.75
-
-F1 and Recall:
-- N	0.64	0.60	
-- Y	0.73	0.77	
-
-**SVM**
-- Accuracy: 0.69
-- AUC: 	Not Run	
-
-F1 and Recall:
-- N 0.64	0.59	
-- Y	0.72	0.77	
+![Image description](https://github.com/mellymillionz/Classification_Project/blob/master/Outcomes.png)
 
 ## Final Model
 
 Random Forest was selected as the final model because of it's combination of high accuracy and AUC. This project was interested in exploring the prediction of both Residential and Non-Residential properties, so balancing the precision and recall is important for the overall predictive ability of this model. 
+
+![Image description](https://github.com/mellymillionz/Classification_Project/blob/master/Randon_forest_ROC.png)
+
 
 ## Feature importances:
 
